@@ -7,7 +7,7 @@
 
 		<!-- Package Information -->
 		<PackageId>SQLQueryOptimizer.Dapper</PackageId>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<Authors>Nandhakumar</Authors>
 		<Company>Full Stack Developer</Company>
 		<PackageIcon>icon.png</PackageIcon>
@@ -16,6 +16,7 @@
 		<RepositoryUrl>https://github.com/Nandhakumar-rg/SQLQueryOptimizer</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
@@ -27,6 +28,7 @@
 	<ItemGroup>
 		<ProjectReference Include="..\SQLQueryOptimizer.Core\SQLQueryOptimizer.Core.csproj" />
 		<None Include="icon.png" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 </Project>

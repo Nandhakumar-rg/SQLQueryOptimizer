@@ -7,7 +7,7 @@
 
 		<!-- Package Information -->
 		<PackageId>SQLQueryOptimizer.EntityFramework</PackageId>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<Authors>Nandhakumar</Authors>
 		<Company>Full Stack Developer</Company>
 		<PackageIcon>icon.png</PackageIcon>
@@ -16,6 +16,7 @@
 		<RepositoryUrl>https://github.com/Nandhakumar-rg/SQLQueryOptimizer</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
@@ -25,6 +26,7 @@
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.5" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
 		<None Include="icon.png" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 	<ItemGroup>
