@@ -13,6 +13,8 @@
 		<PackageIcon>icon.png</PackageIcon>
 		<Description>Entity Framework Core integration for SQL Query Optimizer.</Description>
 		<PackageTags>SQL;Query;Optimization;Performance;EntityFramework;EFCore</PackageTags>
+		<RepositoryUrl>https://github.com/Nandhakumar-rg/SQLQueryOptimizer</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>

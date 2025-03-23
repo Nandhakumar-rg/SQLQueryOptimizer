@@ -13,6 +13,8 @@
 		<PackageIcon>icon.png</PackageIcon>
 		<Description>Advanced SQL Query Optimizer for .NET that auto-suggests query optimizations, provides performance benchmarking, and detects missing indexes.</Description>
 		<PackageTags>SQL;Query;Optimization;Performance;Index;Benchmarking;Database</PackageTags>
+		<RepositoryUrl>https://github.com/Nandhakumar-rg/SQLQueryOptimizer</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		
