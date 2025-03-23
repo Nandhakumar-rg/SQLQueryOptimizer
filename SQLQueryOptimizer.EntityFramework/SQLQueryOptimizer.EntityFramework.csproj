@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Package Information -->
+		<PackageId>SQLQueryOptimizer.EntityFramework</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Nandhakumar</Authors>
+		<Company>Full Stack Developer</Company>
+		<PackageIcon>icon.png</PackageIcon>
+		<Description>Entity Framework Core integration for SQL Query Optimizer.</Description>
+		<PackageTags>SQL;Query;Optimization;Performance;EntityFramework;EFCore</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+		<None Include="icon.png" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SQLQueryOptimizer.Core\SQLQueryOptimizer.Core.csproj" />
+	</ItemGroup>
+
+</Project>

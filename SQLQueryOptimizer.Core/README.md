@@ -2,9 +2,6 @@
 
 A powerful library for optimizing SQL queries in .NET applications. This package helps developers identify and fix performance issues in their SQL queries.
 
-[![NuGet Version](https://img.shields.io/nuget/v/SQLQueryOptimizer.Core)](https://www.nuget.org/packages/SQLQueryOptimizer.Core/)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/SQLQueryOptimizer.Core)](https://www.nuget.org/packages/SQLQueryOptimizer.Core/)
-
 ## Features
 
 - **Query Analysis**: Automatically detects common SQL anti-patterns and performance issues
@@ -13,7 +10,9 @@ A powerful library for optimizing SQL queries in .NET applications. This package
 - **Performance Benchmarking**: Measures and compares query performance
 - **Integration with Popular ORMs**: Works with Entity Framework Core and Dapper
 
-## Installation
+## Getting Started
+
+### Installation
 
 ```bash
 # Install the core package
@@ -26,9 +25,9 @@ dotnet add package SQLQueryOptimizer.EntityFramework
 dotnet add package SQLQueryOptimizer.Dapper
 ```
 
-## Basic Usage
+### Basic Usage
 
-```csharp
+
 // Register services in DI container
 services.AddSqlQueryOptimizer();
 
@@ -56,24 +55,27 @@ var metrics = await queryAnalyzer.BenchmarkQueryAsync(
     iterations: 5);
 
 Console.WriteLine($"Average execution time: {metrics.ExecutionTimeMs} ms");
-```
+
 
 ## Entity Framework Core Integration
 
-```csharp
+
 // Analyze an EF Core query
 var query = dbContext.Products.Where(p => p.CategoryId == 1);
 var result = await query.AnalyzeAsync(queryAnalyzer);
-```
+
 
 ## Dapper Integration
 
-```csharp
 // Analyze a Dapper query
 var sql = "SELECT * FROM Products WHERE CategoryId = @categoryId";
 var result = await connection.AnalyzeQueryAsync(sql, queryAnalyzer);
-```
+
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+
+

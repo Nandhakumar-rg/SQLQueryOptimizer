@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Package Information -->
+		<PackageId>SQLQueryOptimizer.Dapper</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Nandhakumar</Authors>
+		<Company>Full Stack Developer</Company>
+		<PackageIcon>icon.png</PackageIcon>
+		<Description>Dapper integration for SQL Query Optimizer.</Description>
+		<PackageTags>SQL;Query;Optimization;Performance;Dapper;MicroORM</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Dapper" Version="2.0.123" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SQLQueryOptimizer.Core\SQLQueryOptimizer.Core.csproj" />
+		<None Include="icon.png" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+</Project>
